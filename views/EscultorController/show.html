@@ -1,0 +1,14 @@
+{{extend 'layout_general.html'}}
+<h1>Escultor {{=escultor.f_escultor_nombre}}</h1>
+
+<center>
+<img class="img-thumbnail" width="670px" src="{{=URL('download', args=escultor.f_escultor_imagen)}}" />
+</center>
+
+<h2>Premios</h2>
+
+<ul id="noStiches">
+{{for premio in premios:}}
+    {{=LI(STRONG(premio.f_premios_anio, ": "), premio.f_premios_descripcion)}}
+{{pass}}
+</ul>
