@@ -1,5 +1,5 @@
 (dp1
-S'f_escultor_imagen'
+S'f_escultor_nacimiento'
 p2
 (dp3
 S'length'
@@ -10,7 +10,7 @@ p5
 I00
 sS'sortable'
 p6
-I8
+I4
 sS'sql'
 p7
 S'CHAR(512)'
@@ -20,7 +20,7 @@ p9
 I00
 sS'type'
 p10
-S'upload'
+S'string'
 p11
 ssS'f_escultor_descripcion'
 p12
@@ -39,7 +39,7 @@ I00
 sg10
 S'text'
 p15
-ssS'f_escultor_nacimiento'
+ssS'f_escultor_imagen'
 p16
 (dp17
 g4
@@ -47,14 +47,14 @@ I512
 sg5
 I00
 sg6
-I4
+I8
 sg7
 S'CHAR(512)'
 p18
 sg9
 I00
 sg10
-S'string'
+S'upload'
 p19
 ssS'f_escultor_mini'
 p20
@@ -71,7 +71,7 @@ p22
 sg9
 I00
 sg10
-g11
+g19
 ssS'f_escultor_contacto'
 p23
 (dp24
@@ -87,7 +87,7 @@ p25
 sg9
 I00
 sg10
-g19
+g11
 ssS'f_escultor_id'
 p26
 (dp27
@@ -103,7 +103,7 @@ p28
 sg9
 I00
 sg10
-g19
+g11
 ssS'f_escultor_premio'
 p29
 (dp30
@@ -159,7 +159,7 @@ p45
 sg9
 I00
 sg10
-g19
+g11
 ssS'f_escultor_nombre'
 p46
 (dp47
@@ -175,5 +175,5 @@ p48
 sg9
 I00
 sg10
-g19
+g11
 ss.

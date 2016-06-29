@@ -12,3 +12,10 @@ def show():
 
 def download():
     return response.download(request, db)
+
+def escultura():
+    titulo="Escultura"
+    artista = db.t_artistas(request.args(0)) or redirect(URL('index'))
+    escultura = db(db.t_esculturas.f_escultura_id==artista.f_artista_nombre).select().first()
+   
+    return dict(artista=artista, escultura=escultura, titulo=titulo)

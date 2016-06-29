@@ -1,51 +1,18 @@
 {{extend 'layout_general.html'}}
-<title>Información sobre la Bienal</title>
-<head>
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    
-</head>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Shop Item - Start Bootstrap Template</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/shop-item.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-md-offset-2" >
                 <h2><a>¿Qué es la Bienal?</a></h2>
 
-                <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; La Bienal es un concurso de esculturas organizado por la fundación Urunday, desde el año 1988 en la ciudad de Resistencia.</p>
-                <p >En cada edición, entre 10 y 15 escultores seleccionados deben realizar su obra al aire libre y a la vista de los visitanes.</p>
+                <p align="justify">La Bienal es un concurso de esculturas organizado por la fundación Urunday, desde el año 1988 en la ciudad de Resistencia.</p>
+                <p >En cada edición, entre 10 y 15 escultores seleccionados deben realizar su obra al aire libre y a la vista de los visitantes.</p>
                 <p>Al finalizar la semana, el sábado por la noche, se lleva a cabo una ceremonia de clausura, con su correspondiente entrega de premios.</p>
 
                 <hr>
 
                 <h2><a>¿Y qué pasa con las Esculturas?</a></h2>
-                <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las mismas son expuestas por 60 días finalizado el concurso y luego son distribuidas por la ciudad de Resistencia, creando un patrimonio cultural sin precedentes y transformando a la misma en un moderno y único museo al aire libre.</p>
+                <p align="justify">Las mismas son expuestas por 60 días de finalizado el concurso y luego son distribuidas por la ciudad de Resistencia, creando un patrimonio cultural sin precedentes y transformando a la misma en un moderno y único museo al aire libre.</p>
 
                 <hr>
                 <h2>
@@ -55,24 +22,20 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si bien el evento en sus principios era de carácter local y su material protagonista era la simbólica madera del Urunday, con el paso del tiempo su importancia fue creciendo, tanto como la lista de materiales que edición a edición se van agregando.
                 </p>
                 <p>
-                    Tradicionalmente, en sus primeros tiempos, el evento tenía lugar en la plaza 25 de Mayo, del centro de la ciudad, pero desde el 2006, con el inevitable crecimiento de sus vicitantes, se trasladó al Paseo Costanero del Río Negro.
+                    Tradicionalmente, en sus primeros tiempos, el evento tenía lugar en la plaza 25 de Mayo, del centro de la ciudad, pero desde el 2006, con el inevitable crecimiento de sus visitantes, se trasladó al Paseo Costanero del Río Negro.
                 </p>
                 <hr>
                 <h2>
                     <a>Ediciones Anteriores</a>
                 </h2>
                 <h3>
-                    <a>&nbsp;2012 La Profesía</a>
+                    <a>2012 La Profecía</a>
                 </h3>
-                <h4>
-                 &nbsp;&nbsp;&nbsp;Material:
-                </h4>
+                <h4>Material:</h4>
                     <ul>
                         Mármol
                     </ul>
-                <h4>
-                    &nbsp;&nbsp;&nbsp;Premios:
-                </h4>
+                <h4>Premios:</h4>
                 <ul>
                     <li>
                         &nbsp;&nbsp;&nbsp;&nbsp;<strong>1° Premio:</strong> Fernando Pinto (Colombia) "Espejos del cielo"

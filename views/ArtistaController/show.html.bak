@@ -6,15 +6,16 @@
 </center>
 <hr>
 
-<h2>Biografía</h2>
+<h3>Biografía</h3>
 {{=artista.f_artista_descripcion}}
 <hr>
-<h2>Técnica</h2>
+<h3>Técnica</h3>
 {{=artista.f_artista_tecnica}}
 <hr>
-<h2>Temática</h2>
+<h3>Temática</h3>
 {{=artista.f_artista_tematica}}
 <hr>
-<h2>Materiales</h2>
+<h3>Materiales</h3>
 {{=artista.f_artista_materiales}}
 <hr>
+<center><a href="{{=URL('escultura', args=artista.id)}}"><button class="button button1">Ver Escultura 2016  </button></a></center>
