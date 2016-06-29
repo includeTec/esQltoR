@@ -1,0 +1,6 @@
+{{extend 'layout_general.html'}}
+<h1>Escultura de fulano</h1>
+
+<center>
+<img class="img-thumbnail" width="670px" src="{{=URL('download', args=escultura.f_escultura_imagen)}}" />
+</center>

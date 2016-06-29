@@ -53,10 +53,9 @@
       <div class="container-fluid">
         <div class="navbar-header">
       
-        <image src= "/esQltoR/static/images/elMenuscito.svg">
+        <a class="navbar-brand">EsQltoR</a>
 
-        <img src="/esQltoR/static/images/lavarrita2xd.png"/>
-
+      
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -82,22 +81,30 @@
     <!-- Begin page content -->
 
    
-
+<!--================================================== MENU ================================================================================ -->
     <ul id="noStiches">
       <center>
       <br><br>
-      <li> <button class="button button1">
+      <li> <button>
       <br>
       <image src='/esQltoR/static/images/qr.png' height='100' width= '100'>
       <br> Escanear QR </li>
       <br>
-          <li> <a href='/esQltoR/EscultorController/index.html'><button class="button button2">Lista de Escultores</button></a></li>
+          <li> <a href='/esQltoR/EscultorController/index.html'><button><span class= "glyphicon glyphicon-th-list"></span> Lista de Escultores</button></a></li>
       <br>
-          <li> <a href='/esQltoR/ArtistaController/index.html'><button class="button button3">Artistas Paralelos</button></a></li>
+          <li> <a href='/esQltoR/ArtistaController/index.html'><button><span class= "glyphicon glyphicon-user"></span> Artistas Paralelos</button></a></li>
       <br>
-      <li> <button class="button button4">Información Bienal</li>
+          <li> <a href='/esQltoR/BienalController/show.html'><button><span class= "glyphicon glyphicon-info-sign"></span> Información Bienal</button></a></li>
       <br>
-      <li> <button class="button button5">Compartir</li>
+      <li> <button data-toggle="collapse" data-target="#demo"><span class = "glyphicon glyphicon-share"></span> Compartir</li>
+
+<!-- ============================================== COLLAPSE COMPARTIR ====================================================================== -->
+      <div id="demo" class="collapse">
+        <li><a href="https://www.facebook.com"> Feibu</li></a>
+        <li><a href="https://twitter.com"> Tuita</li></a>
+        <li><a href="https://plus.google.com/"> Gugle maz</li></a>
+      </div>
+
       </center>
      </ul>
      

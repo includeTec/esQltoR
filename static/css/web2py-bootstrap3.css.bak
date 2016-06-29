@@ -15,18 +15,67 @@ div.w2p_flash {
     margin: 0 0 20px;
     padding: 15px 35px 15px 15px;
 }
-.btn-default:hover {
-    background-color: rgba(0, 0, 0, 0);
+
+
+.btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 14px;
+  background: transparent;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  text-decoration: none;
 }
 
 .btn:hover {
-    border-color: transparent;
+  background: #ffffff;
+  text-decoration: none;
+  color: #000000;
 }
-.btn:hover, .btn:focus, .btn.focus {
-    color: #ffffff;
-    text-decoration: none; 
-    -webkit-box-shadow: none; 
-    box-shadow: none; 
+
+
+.button1 {
+   -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 14px;
+  background: #f0f0f0;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  text-decoration: none;} /*Boton estandar nuevo*/
+.button2 {
+    padding: 5px 5px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: none;
+    } /*Back Button*/
+
+.button2:hover {
+    background-color:  #660066;
+    color:  #660066;
+    text-decoration: none;
+}
+
+.button2:focus{
+     background-color:  #660066;
+    color:  #660066;
+    text-decoration: none;
+
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #000000;
+    text-decoration: none;
 }
 
 div.w2p_flash.alert:hover {
@@ -45,12 +94,6 @@ div.w2p_flash.alert:hover {
 .navbar-default {
     background-color: #660066;
     border-color: #660066;
-}
-
-.btn-default {
-    color: #3e3f3a;
-    background-color: #ffffff;
-    border-color: transparent;
 }
 
 
@@ -142,12 +185,21 @@ body {
     padding-top: 60px;
     margin-bottom: 60px;
 }
+body {
+    font-family: Abel ;
+    font-size: 4em;
+}
+body {
+    font-family: Lato ;
+    font-size: 2em;
+}
 header {
     -webkit-box-shadow: 0 0 8px 2px #000;
     -moz-box-shadow: 0 0 8px 2px #000;
     box-shadow: 0 0 8px 2px #000;
     margin-bottom: 10px;
 }
+
 html {
     position: relative;
     min-height: 100%;

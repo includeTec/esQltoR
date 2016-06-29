@@ -1,20 +1,24 @@
 {{extend 'layout_general.html'}}
 
-<body>
-
 <center>
 <div class='row'>
 <div class='col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4'>
-<ul id="noStiches">
-<h1>Lista de Artistas</h1>
-<br>
+<ul id="noStiches" class="media-list">
 {{for artista in artistas:}}
-{{=LI(A(BUTTON(artista.f_artista_nombre,  _class='btn btn-default btn-lg btn-block'), _href=URL("show", args=artista.id)))}}
-<br>
+<li class="media">
+<div class="media-left">
+  <a href="{{=URL('show', args=artista.id)}}">
+    <img class="media-object" width="100px" src="{{=URL('download', args=artista.f_artista_mini)}}">
+  </a>
+</div>
+<div class="media-body">
+  <a class="btn button2 btn-lg btn-block" href="{{=URL('show', args=artista.id)}}" role="button"><strong>{{=artista.f_artista_nombre}}</strong><br>{{=artista.f_artista_tematica}}</a>
+</div>
+</li>
+<hr>
 {{pass}}
 </ul>
+
 </div>
 </div>
 </center>
-
-</body>

@@ -1,0 +1,26 @@
+{{extend 'layout_general.html'}}
+
+<center>
+<div class='row'>
+<div class='col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4'>
+
+<ul id="noStiches" class="media-list">
+{{for escultor in escultores:}}
+<li class="media">
+<div class="media-left">
+  <a href="{{=URL('show', args=escultor.id)}}">
+    <img class="media-object" width="100px" src="{{=URL('download', args=escultor.f_escultor_mini)}}">
+  </a>
+</div>
+<div class="media-body">
+  <a class="btn button2 btn-lg btn-block" href="{{=URL('show', args=escultor.id)}}" role="button"><strong>{{=escultor.f_escultor_nombre}}</strong><br>{{=escultor.f_escultor_origen}}</a>
+</div>
+<hr>
+</li>
+<br>
+{{pass}}
+</ul>
+
+</div>
+</div>
+</center>

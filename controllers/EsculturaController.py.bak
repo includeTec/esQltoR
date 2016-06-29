@@ -1,0 +1,6 @@
+{{extend 'layout_general.html'}}
+# -*- coding: utf-8 -*-
+
+def show():
+    bien =""
+    return dict(bien=bien)

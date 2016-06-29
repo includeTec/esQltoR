@@ -24,42 +24,53 @@ div.w2p_flash {
   font-family: Arial;
   color: #000000;
   font-size: 14px;
-  background: #f0f0f0;
+  background: transparent;
   padding: 10px 20px 10px 20px;
-  border: solid #cccccc 1px;
+  border: none;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: #ffffff;
-  text-decoration: none;
-  color: #000000;
+    background: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    box-shadow: none;
 }
 
-.button1 {padding: 10px 65px;} /*Escanera QR*/
-.button2 {padding: 10px 40px;} /*Lista Escultores*/
-.button3 {padding: 10px 43px;} /*Artistas*/
-.button4 {padding: 10px 43px;} /*Info Bienal*/
-.button5 {padding: 10px 78px;} /*Compartir*/
-.button6 {
+.button1 {
+    -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    border-radius: 3px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 14px;
+    background: #f0f0f0;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    text-decoration: none;} /*Boton estandar nuevo*/
+
+
+.button2 {
     padding: 5px 5px;
     background-color: transparent;
     border-radius: 3px;
     border: none;
     } /*Back Button*/
 
-.button6:hover {
-    background-color:  #660066;
+.button2:hover {
+    background-color:  transparent;
     color:  #660066;
     text-decoration: none;
 }
 
-.button6:focus{
-     background-color:  #660066;
+.button2:focus{
+    background-color:  transparent;
     color:  #660066;
     text-decoration: none;
 
 }
+
+/*---------------------------------------------------END BUTTONS ---------------------------------------------------------------------------*/
 
 a {
     color: #000000;
@@ -84,11 +95,23 @@ div.w2p_flash.alert:hover {
     margin-top: 20px;
 }
 
+/*-----------------------------------------------NAVBAR--------------------------------------------------------------------------------------*/
 .navbar-default {
-    background-color: #660066;
-    border-color: #660066;
+    background-color: rgba(112,2,115,0.83);
+    border-color: #ffffff;
 }
 
+nav.navbar ul.nav li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 51%;
+    position: absolute;
+    font-size: 50px;
+}
+/*-------------------------------------------END NAVBAR--------------------------------------------------------------------------------------*/
 
 div.error {
     width: auto;
@@ -177,6 +200,7 @@ select.autocomplete {
 body {
     padding-top: 60px;
     margin-bottom: 60px;
+
 }
 header {
     -webkit-box-shadow: 0 0 8px 2px #000;

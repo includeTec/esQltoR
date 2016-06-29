@@ -1,10 +1,13 @@
 {{extend 'layout_general.html'}}
-<h1>Escultor {{=escultor.f_escultor_nombre}}</h1>
-
+<h1>{{=escultor.f_escultor_nombre}}</h1>
+<hr>
 <center>
 <img class="img-thumbnail" width="670px" src="{{=URL('download', args=escultor.f_escultor_imagen)}}" />
 </center>
-
+<hr>
+<h2>Biografía</h2>
+    <h4>{{=escultor.f_escultor_descripcion}}</h4>
+<hr>
 <h2>Premios</h2>
 
 <ul id="noStiches">
@@ -12,3 +15,13 @@
     {{=LI(STRONG(premio.f_premios_anio, ": "), premio.f_premios_descripcion)}}
 {{pass}}
 </ul>
+<hr>
+<center>
+<a href="{{=URL('escultura', args=escultor.id)}}"><button class="button button1">Ver Escultura 2016  </button></a></center>
+<br>  
+<br>  
+<br>  
+<br>  
+<hr>
+<footer><strong>Contacto: </strong><a href="{{=escultor.f_escultor_contacto}}">{{=escultor.f_escultor_contacto}}</a></footer>
+<hr>

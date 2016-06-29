@@ -1,10 +1,20 @@
 {{extend 'layout_general.html'}}
-<h1>Artista {{=artista.f_artista_nombre}}</h1>
-
+<h1>{{=artista.f_artista_nombre}}</h1>
+<hr>
 <center>
 <img class="img-thumbnail" width="670px" src="{{=URL('download', args=artista.f_artista_imagen)}}" />
 </center>
-<h2>Descripción</h2>
+<hr>
 
-
+<h3>Biografía</h3>
 {{=artista.f_artista_descripcion}}
+<hr>
+<h3>Técnica</h3>
+{{=artista.f_artista_tecnica}}
+<hr>
+<h3>Temática</h3>
+{{=artista.f_artista_tematica}}
+<hr>
+<h3>Materiales</h3>
+{{=artista.f_artista_materiales}}
+<hr>

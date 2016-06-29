@@ -1,0 +1,35 @@
+{{extend 'layout_general.html'}}
+
+<div class="container">
+     <div class="row">
+         <div class="col-sm-12 col-md-8 col-md-offset-2" >
+<center>
+<h1>{{=escultura.f_escultura_nombre}}</h1>
+<h3>{{=escultura.f_escultura_id}}</h3>
+<hr>
+<img class="img-thumbnail" width="500px" src="{{=URL('download', args=escultura.f_escultura_imagen)}}" />
+ </center>
+
+<hr>
+
+<p>{{=escultura.f_escultura_descripcion}}</p>
+
+<hr>
+<ul class="media-list">
+<li class="media">
+<div class="media-left">
+  <a href="{{=URL('EscultorController', 'show', args=escultor.id)}}">
+    <img class="media-object" width="75px" src="{{=URL('download', args=escultor.f_escultor_mini)}}" />
+  </a>
+</div>
+<div class="media-body">
+  <strong>Autor: </strong> {{=escultor.f_escultor_nombre}}<br>
+  <strong>Material: </strong> Marmol
+  <br><strong>Bienal 2016</strong>
+</div>
+</li>
+</ul>
+
+         </div>
+    </div>
+</div>
