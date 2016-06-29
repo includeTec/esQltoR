@@ -52,20 +52,7 @@ db.define_table('t_esculturas',
 
 db.define_table('t_esculturas_archive',db.t_esculturas,Field('current_record','reference t_esculturas',readable=False,writable=False))
 
-########################################
-db.define_table('t_sesion',
-    Field('f_user_email', type='string',
-          label=T('User Email')),
-    Field('f_user_contrasenia', type='string',
-          label=T('User Contrasenia')),
-    Field('f_user_nombre', type='string',
-          label=T('User Nombre')),
-    Field('f_user_fechanacimiento', type='string',
-          label=T('User Fechanacimiento')),
-    format='%(f_user_email)s',
-    migrate=settings.migrate)
 
-db.define_table('t_sesion_archive',db.t_sesion,Field('current_record','reference t_sesion',readable=False,writable=False))
 
 ##################################################
 

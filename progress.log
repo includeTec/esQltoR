@@ -460,3 +460,5 @@
 [2016-06-27 09:12:02] EDIT esQltoR/views/ArtistaController/show.html: 3
 [2016-06-27 09:12:40] EDIT esQltoR/views/ArtistaController/show.html: 3
 [2016-06-27 09:13:35] EDIT esQltoR/views/ArtistaController/show.html: 0
+[2016-06-29 10:27:07] EDIT esQltoR/models/db_esqltor.py: -12
+[2016-06-29 10:33:06] EDIT esQltoR/views/layout_esqltor.html: -6
