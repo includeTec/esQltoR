@@ -43,13 +43,18 @@ p15
 (dp16
 S'sortable'
 p17
+<<<<<<< HEAD
 I6
+=======
+L6L
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 sS'sql'
 p18
 S'CHAR(512)'
 p19
 sS'length'
 p20
+<<<<<<< HEAD
 I512
 sS'notnull'
 p21
@@ -57,6 +62,15 @@ I00
 sS'unique'
 p22
 I00
+=======
+L512L
+sS'notnull'
+p21
+L0L
+sS'unique'
+p22
+L0L
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 sS'type'
 p23
 S'string'

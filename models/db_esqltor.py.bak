@@ -88,6 +88,8 @@ db.define_table('t_artistas',
           label=T('Artista Contacto')),
     Field('f_artista_imagen', type='upload',
           label=T('Artista Imagen')),
+    Field('f_artista_mini', type='upload',
+          label=T('Artista Mini')),
     format='%(f_artista_id)s',
     migrate=settings.migrate)
 

@@ -60,13 +60,18 @@ p19
 (dp20
 S'sortable'
 p21
+<<<<<<< HEAD
 I6
+=======
+L6L
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 sS'sql'
 p22
 S'CHAR(512)'
 p23
 sS'length'
 p24
+<<<<<<< HEAD
 I512
 sS'notnull'
 p25
@@ -74,6 +79,15 @@ I00
 sS'unique'
 p26
 I00
+=======
+L512L
+sS'notnull'
+p25
+L0L
+sS'unique'
+p26
+L0L
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 sS'type'
 p27
 S'string'
@@ -111,7 +125,11 @@ I00
 sg10
 S'reference t_artistas'
 p35
+<<<<<<< HEAD
 ssS'f_artista_mini'
+=======
+ssS'f_artista_id'
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 p36
 (dp37
 g4
@@ -126,11 +144,15 @@ p38
 sg9
 I00
 sg10
+<<<<<<< HEAD
 S'upload'
 p39
+=======
+g15
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 ssS'f_artista_tecnica'
-p40
-(dp41
+p39
+(dp40
 g4
 I32768
 sg5
@@ -139,14 +161,14 @@ sg6
 I6
 sg7
 S'TEXT'
-p42
+p41
 sg9
 I00
 sg10
 g11
 ssS'f_artista_materiales'
-p43
-(dp44
+p42
+(dp43
 g4
 I32768
 sg5
@@ -155,14 +177,14 @@ sg6
 I7
 sg7
 S'TEXT'
-p45
+p44
 sg9
 I00
 sg10
 g11
 ssS'f_artista_tematica'
-p46
-(dp47
+p45
+(dp46
 g4
 I32768
 sg5
@@ -171,27 +193,42 @@ sg6
 I5
 sg7
 S'TEXT'
-p48
+p47
 sg9
 I00
 sg10
 g11
+<<<<<<< HEAD
 ssS'f_artista_id'
 p49
 (dp50
+=======
+ssS'f_artista_mini'
+p48
+(dp49
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 g4
 I512
 sg5
 I00
 sg6
+<<<<<<< HEAD
 I2
+=======
+I11
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 sg7
 S'CHAR(512)'
-p51
+p50
 sg9
 I00
 sg10
+<<<<<<< HEAD
 g15
+=======
+S'upload'
+p51
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 ssS'id'
 p52
 (dp53
@@ -224,5 +261,9 @@ p58
 sg9
 I00
 sg10
+<<<<<<< HEAD
 g39
+=======
+g51
+>>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
 ss.
