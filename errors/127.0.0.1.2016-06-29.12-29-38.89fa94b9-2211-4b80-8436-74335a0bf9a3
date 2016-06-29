@@ -1,0 +1,536 @@
+(dp1
+S'output'
+p2
+S"<class 'cPickle.UnpicklingError'> invalid load key, '<'."
+p3
+sS'layer'
+p4
+S'L:\\Descargas\\root lollipop\\web2py\\applications\\esQltoR\\models\\db_esqltor.py'
+p5
+sS'code'
+p6
+S"### we prepend t_ to tablenames and f_ to fieldnames for disambiguity\n\n\n########################################\ndb.define_table('t_escultores',\n    Field('f_escultor_id', type='string',\n          label=T('Escultor Id')),\n    Field('f_escultor_nombre', type='string',\n          label=T('Escultor Nombre')),\n    Field('f_escultor_nacimiento', type='string',\n          label=T('Escultor Nacimiento')),\n    Field('f_escultor_origen', type='string',\n          label=T('Escultor origen')),\n    Field('f_escultor_descripcion', type='text',\n          label=T('Escultor Descripcion')),\n    Field('f_escultor_contacto', type='string',\n          label=T('Escultor Contacto')),\n    Field('f_escultor_imagen', type='upload',\n          label=T('Escultor Imagen')),\n    Field('f_escultor_mini', type='upload',\n          label=T('Escultor miniatura')),\n    \n    format='%(f_escultor_id)s',\n    migrate=settings.migrate)\n\ndb.define_table('t_escultores_archive',db.t_escultores,Field('current_record','reference t_escultores',readable=False,writable=False))\n\n########################################\ndb.define_table('t_premios',\n    Field('f_premios_escultor', db.t_escultores ,\n          label=T('Escultor ID')),\n    Field('f_premios_anio', type='string',\n          label=T('A\xc3\xb1o de Premio')),\n    Field('f_premios_descripcion', type='string',\n          label=T('Descripci\xc3\xb3n de Premio')),\n    format='%(f_premios_id)s',\n    migrate=settings.migrate)\n\n\n########################################\ndb.define_table('t_esculturas',\n    Field('f_escultura_id', type='string',\n          label=T('Escultura Id')),\n    Field('f_escultura_nombre', type='string',\n          label=T('Escultura Nombre')),\n    Field('f_escultura_descripcion', type='text',\n          label=T('Escultura Descripcion')),\n    Field('f_escultura_imagen', type='upload',\n          label=T('Escultura Imagen')),\n    format='%(f_escultura_id)s',\n    migrate=settings.migrate)\n\ndb.define_table('t_esculturas_archive',db.t_esculturas,Field('current_record','reference t_esculturas',readable=False,writable=False))\n\n\n\n##################################################\n\ndb.define_table('t_artistas',\n    Field('f_artista_id', type='string',\n          label=T('Artista Id')),\n    Field('f_artista_nombre', type='string',\n          label=T('Artista Nombre')),\n    Field('f_artista_pais', type='string',\n          label=T('Artista Pais')),\n    Field('f_artista_tematica', type='text',\n        label=T('Artista Tematica')),\n    Field('f_artista_tecnica', type='text',\n           label=T('Artista Tecnica')),\n    Field('f_artista_materiales', type='text',\n           label=T('Artista Materiales')),\n    Field('f_artista_descripcion', type='text',\n          label=T('Artista Descripcion')),\n    Field('f_artista_premio', type='text',\n          label=T('Artista Contacto')),\n    Field('f_artista_imagen', type='upload',\n          label=T('Artista Imagen')),\n    Field('f_artista_mini', type='upload',\n          label=T('Artista Mini')),\n    format='%(f_artista_id)s',\n    migrate=settings.migrate)\n\ndb.define_table('t_artistas_archive',db.t_artistas,Field('current_record','reference t_artistas',readable=False,writable=False))\n\n##################################################\n"
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__module__'
+p12
+S"'cPickle'"
+p13
+sS'__getslice__'
+p14
+S"<method-wrapper '__getslice__' of UnpicklingError object>"
+p15
+sS'__str__'
+p16
+S'<bound method UnpicklingError.__str__ of UnpicklingError("invalid load key, \'<\'.",)>'
+p17
+sS'__reduce__'
+p18
+S'<built-in method __reduce__ of UnpicklingError object>'
+p19
+sS'__dict__'
+p20
+S'{}'
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of UnpicklingError object>'
+p23
+sS'__weakref__'
+p24
+S'None'
+p25
+sS'__init__'
+p26
+S"<method-wrapper '__init__' of UnpicklingError object>"
+p27
+sS'__setattr__'
+p28
+S"<method-wrapper '__setattr__' of UnpicklingError object>"
+p29
+sS'__reduce_ex__'
+p30
+S'<built-in method __reduce_ex__ of UnpicklingError object>'
+p31
+sS'__new__'
+p32
+S'<built-in method __new__ of type object>'
+p33
+sS'__format__'
+p34
+S'<built-in method __format__ of UnpicklingError object>'
+p35
+sS'__class__'
+p36
+S"<class 'cPickle.UnpicklingError'>"
+p37
+sS'__doc__'
+p38
+S'None'
+p39
+sS'__getitem__'
+p40
+S"<method-wrapper '__getitem__' of UnpicklingError object>"
+p41
+sS'__setstate__'
+p42
+S'<built-in method __setstate__ of UnpicklingError object>'
+p43
+sS'__getattribute__'
+p44
+S"<method-wrapper '__getattribute__' of UnpicklingError object>"
+p45
+sS'args'
+p46
+S'("invalid load key, \'<\'.",)'
+p47
+sS'__subclasshook__'
+p48
+S'<built-in method __subclasshook__ of type object>'
+p49
+sS'__unicode__'
+p50
+S'<built-in method __unicode__ of UnpicklingError object>'
+p51
+sS'__delattr__'
+p52
+S"<method-wrapper '__delattr__' of UnpicklingError object>"
+p53
+sS'__repr__'
+p54
+S"<method-wrapper '__repr__' of UnpicklingError object>"
+p55
+sS'__hash__'
+p56
+S"<method-wrapper '__hash__' of UnpicklingError object>"
+p57
+ssS'evalue'
+p58
+S"invalid load key, '<'."
+p59
+sS'request'
+p60
+cgluon.html
+XML_unpickle
+p61
+(S's\xb5`\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>esQltoR</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>c34699616208</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>appadmin</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-d86da998-fadf-4c8a-b977-c2255f30e18f<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_esqltor</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f347d26d-e05d-417b-a1fd-59c916afbbfd<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-0d83d8a2-3c76-4fc6-8d9c-94355d05f855<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>*/*</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>es,es-419;q=0.8,pt-BR;q=0.6,pt;q=0.4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_esqltor=127.0.0.1-f347d26d-e05d-417b-a1fd-59c916afbbfd; session_id_welcome=127.0.0.1-0d83d8a2-3c76-4fc6-8d9c-94355d05f855; session_id_admin=127.0.0.1-d86da998-fadf-4c8a-b977-c2255f30e18f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_REFERER</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/edit/esQltoR/controllers/ArtistaController.py?id=controllers__ArtistaController__py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_WEB2PY_COMPONENT_ELEMENT</td><td style="vertical-align:top;">:</td><td><div>c34699616208</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_WEB2PY_COMPONENT_LOCATION</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/edit/esQltoR/controllers/ArtistaController.py?id=controllers__ArtistaController__py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_X_REQUESTED_WITH</td><td style="vertical-align:top;">:</td><td><div>XMLHttpRequest</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/esQltoR/appadmin/hooks</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>54161</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>PCLeandro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py\\\\applications\\\\esQltoR\\\\&#x27;, &#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py\\\\applications\\\\welcome\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>L:\\Descargas\\root lollipop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x3194f80: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;PCLeandro&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>L:\\Descargas\\root lollipop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>*/*</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate, sdch</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>es,es-419;q=0.8,pt-BR;q=0.6,pt;q=0.4</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_esqltor=127.0.0.1-f347d26d-e05d-417b-a1fd-59c916afbbfd; session_id_welcome=127.0.0.1-0d83d8a2-3c76-4fc6-8d9c-94355d05f855; session_id_admin=127.0.0.1-d86da998-fadf-4c8a-b977-c2255f30e18f</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_referer</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/edit/esQltoR/controllers/ArtistaController.py?id=controllers__ArtistaController__py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_web2py_component_element</td><td style="vertical-align:top;">:</td><td><div>c34699616208</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_web2py_component_location</td><td style="vertical-align:top;">:</td><td><div>http://127.0.0.1:8000/admin/default/edit/esQltoR/controllers/ArtistaController.py?id=controllers__ArtistaController__py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_x_requested_with</td><td style="vertical-align:top;">:</td><td><div>XMLHttpRequest</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>fe80::447f:8ea5:b197:593a%21</div></td></tr><tr><td><div>192.168.2.239</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>PCLeandro</div></td></tr><tr><td><div>fe80::a000:755a:2133:79f5%29</div></td></tr><tr><td><div>192.168.56.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/esQltoR/appadmin/hooks</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>54161</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/esQltoR/appadmin/hooks</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>PCLeandro</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>L:\\Descargas\\root lollipop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.14.6-stable+timestamp.2016.05.10.00.21.47</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x004CD0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x03299298&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x041D6870&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x004CD0D0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x03299298&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x041D6870&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>L:\\Descargas\\root lollipop\\web2py\\applications\\esQltoR\\</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>hooks</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py\\\\applications\\\\esQltoR\\\\&#x27;, &#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py\\\\applications\\\\welcome\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>L:\\Descargas\\root lollipop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x3194f80: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;PCLeandro&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>L:\\Descargas\\root lollipop\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>fe80::447f:8ea5:b197:593a%21</div></td></tr><tr><td><div>192.168.2.239</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>::1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr><tr><td><div>PCLeandro</div></td></tr><tr><td><div>fe80::a000:755a:2133:79f5%29</div></td></tr><tr><td><div>192.168.56.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.14.6-stable+timestamp.2016.05.10.00.21.47</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_scheduler</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2016, 6, 29, 12, 29, 38, 33000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/esQltoR/appadmin/hooks</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2016, 6, 29, 15, 29, 38, 33000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x047110D0&gt;</div></td></tr></table></div>'
+tRp62
+sS'frames'
+p63
+(lp64
+(dp65
+S'file'
+p66
+S'L:\\Descargas\\root lollipop\\web2py\\gluon\\restricted.py'
+p67
+sS'dump'
+p68
+(dp69
+S'environment'
+p70
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p71
+sS'ccode'
+p72
+S'<code object <module> at 047CAD10, file "L:\\Desc...plications\\esQltoR\\models\\db_esqltor.py", line 5>'
+p73
+ssS'lnum'
+p74
+I227
+sS'lines'
+p75
+(dp76
+I224
+S'            ccode = code'
+p77
+sI225
+S'        else:'
+p78
+sI226
+S'            ccode = compile2(code, layer)'
+p79
+sI227
+S'        exec ccode in environment'
+p80
+sI228
+S'    except HTTP:'
+p81
+sI229
+S'        raise'
+p82
+sI230
+S'    except RestrictedError:'
+p83
+sI231
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p84
+sI222
+S'    try:'
+p85
+sI223
+S'        if isinstance(code, types.CodeType):'
+p86
+ssS'call'
+p87
+S"(code='### we prepend t_ to tablenames and f_ to fieldn...################################################\\n', environment={'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}, layer=r'L:\\Descargas\\root lollipop\\web2py\\applications\\esQltoR\\models\\db_esqltor.py')"
+p88
+sS'func'
+p89
+S'restricted'
+p90
+sa(dp91
+g66
+S'L:\\Descargas\\root lollipop\\web2py\\applications\\esQltoR\\models\\db_esqltor.py'
+p92
+sg68
+(dp93
+S'migrate'
+p94
+S'undefined'
+p95
+sS'settings.migrate'
+p96
+S'True'
+p97
+sS'settings'
+p98
+S"<Storage {'layout_theme': 'Default', 'subtitle':...l_server': 'localhost', 'login_method': 'local'}>"
+p99
+ssg74
+I81
+sg75
+(dp100
+I76
+S"    Field('f_artista_imagen', type='upload',"
+p101
+sI77
+S"          label=T('Artista Imagen')),"
+p102
+sI78
+S"    Field('f_artista_mini', type='upload',"
+p103
+sI79
+S"          label=T('Artista Mini')),"
+p104
+sI80
+S"    format='%(f_artista_id)s',"
+p105
+sI81
+S'    migrate=settings.migrate)'
+p106
+sI82
+S''
+sI83
+S"db.define_table('t_artistas_archive',db.t_artistas,Field('current_record','reference t_artistas',readable=False,writable=False))"
+p107
+sI84
+S''
+sI85
+S'##################################################'
+p108
+ssg87
+S'()'
+p109
+sg89
+S'<module>'
+p110
+sa(dp111
+g66
+S'L:\\Descargas\\root lollipop\\web2py\\gluon\\packages\\dal\\pydal\\base.py'
+p112
+sg68
+(dp113
+S'fields'
+p114
+S'(<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>)'
+p115
+sS'self'
+p116
+S'<DAL uri="sqlite://storage.sqlite">'
+p117
+sS'args'
+p118
+S"{'format': '%(f_artista_id)s', 'migrate': True}"
+p119
+sS'tablename'
+p120
+S"'t_artistas'"
+p121
+sS'table'
+p122
+g95
+sS'self.lazy_define_table'
+p123
+S'<bound method DAL.lazy_define_table of <DAL uri="sqlite://storage.sqlite">>'
+p124
+ssg74
+I834
+sg75
+(dp125
+I832
+S'            table = None'
+p126
+sI833
+S'        else:'
+p127
+sI834
+S'            table = self.lazy_define_table(tablename,*fields,**args)'
+p128
+sI835
+S'        if not tablename in self.tables:'
+p129
+sI836
+S'            self.tables.append(tablename)'
+p130
+sI837
+S'        return table'
+p131
+sI838
+S''
+sI829
+S'                    % (tablename,invalid_args))'
+p132
+sI830
+S'        if self._lazy_tables and tablename not in self._LAZY_TABLES:'
+p133
+sI831
+S'            self._LAZY_TABLES[tablename] = (tablename,fields,args)'
+p134
+ssg87
+S'(self=<DAL uri="sqlite://storage.sqlite">, tablename=\'t_artistas\', *fields=(<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>), **args={\'format\': \'%(f_artista_id)s\', \'migrate\': True})'
+p135
+sg89
+S'define_table'
+p136
+sa(dp137
+g66
+S'L:\\Descargas\\root lollipop\\web2py\\gluon\\packages\\dal\\pydal\\base.py'
+p138
+sg68
+(dp139
+S'polymodel'
+p140
+S'None'
+p141
+ssg74
+I873
+sg75
+(dp142
+I868
+S'            try:'
+p143
+sI869
+S'                GLOBAL_LOCKER.acquire()'
+p144
+sI870
+S'                self._lastsql = self._adapter.create_table('
+p145
+sI871
+S'                    table,migrate=migrate,'
+p146
+sI872
+S'                    fake_migrate=fake_migrate,'
+p147
+sI873
+S'                    polymodel=polymodel)'
+p148
+sI874
+S'            finally:'
+p149
+sI875
+S'                GLOBAL_LOCKER.release()'
+p150
+sI876
+S'        else:'
+p151
+sI877
+S'            table._dbt = None'
+p152
+ssg87
+S'(self=<DAL uri="sqlite://storage.sqlite">, tablename=\'t_artistas\', *fields=(<pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>, <pydal.objects.Field object>), **args={\'format\': \'%(f_artista_id)s\', \'migrate\': True})'
+p153
+sg89
+S'lazy_define_table'
+p154
+sa(dp155
+g66
+S'L:\\Descargas\\root lollipop\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py'
+p156
+sg68
+(dp157
+S'global pickle'
+p158
+S"<module 'cPickle' (built-in)>"
+p159
+sS'tfile'
+p160
+S'<pydal.contrib.portalocker.LockedFile object>'
+p161
+sS'sql_fields_old'
+p162
+g95
+sS'pickle.load'
+p163
+S'<built-in function load>'
+p164
+ssg74
+I500
+sg75
+(dp165
+I495
+S'                else:'
+p166
+sI496
+S"                    self.log('success!\\n', table)"
+p167
+sI497
+S'        else:'
+p168
+sI498
+S"            tfile = self.file_open(table._dbt, 'rb')"
+p169
+sI499
+S'            try:'
+p170
+sI500
+S'                sql_fields_old = pickle.load(tfile)'
+p171
+sI501
+S'            except EOFError:'
+p172
+sI502
+S'                self.file_close(tfile)'
+p173
+sI503
+S"                raise RuntimeError('File %s appears corrupted' % table._dbt)"
+p174
+sI504
+S'            self.file_close(tfile)'
+p175
+ssg87
+S'(self=<pydal.adapters.sqlite.SQLiteAdapter object>, table=<Table t_artistas (id, f_artista_id, f_artista_n...rtista_premio, f_artista_imagen, f_artista_mini)>, migrate=True, fake_migrate=False, polymodel=None)'
+p176
+sg89
+S'create_table'
+p177
+sasS'pyver'
+p178
+S'Python 2.7.9: L:\\Descargas\\root lollipop\\web2py\\web2py.exe (prefix: C:\\Python27)'
+p179
+sS'session'
+p180
+g61
+(S's;\x01\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.t_artistas.id&gt;0</div></td></tr></table></div>'
+tRp181
+sS'etype'
+p182
+S"<class 'cPickle.UnpicklingError'>"
+p183
+sS'date'
+p184
+S'Wed Jun 29 12:29:38 2016'
+p185
+sS'response'
+p186
+g61
+(S's\x84\x17\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x047114C0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_esqltor</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f347d26d-e05d-417b-a1fd-59c916afbbfd<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap3_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^appadmin/\\w+\\.py$</div></td></tr><tr><td><div>^appadmin/hooks/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_esqltor</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;L:\\\\Descargas\\\\root lollipop\\\\web2py\\\\applications\\\\esQltoR\\\\sessions\\\\091\\\\01b\\\\127.0.0.1-f347d26d-e05d-417b-a1fd-59c916afbbfd&#x27;, mode &#x27;rb+&#x27; at 0x041E3758&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>L:\\Descargas\\root lollipop\\web2py\\applications\\esQltoR\\sessions\\127.0.0.1-f347d26d-e05d-417b-a1fd-59c916afbbfd</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>e0f62819adcdcef7a1b52cc0eed6af05</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-f347d26d-e05d-417b-a1fd-59c916afbbfd</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_esqltor</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>esQltoR</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>appadmin/hooks.html</div></td></tr></table></div>'
+tRp187
+sS'locals'
+p188
+(dp189
+S'dbpath'
+p190
+S"r'L:\\Descargas\\root lollipop\\web2py\\applications\\esQltoR\\databases'"
+p191
+sS'migrate'
+p192
+g97
+sS'query'
+p193
+S"'CREATE TABLE t_artistas(\\n    id INTEGER PRIMARY ...imagen CHAR(512),\\n    f_artista_mini CHAR(512)\\n);'"
+p194
+sS'table'
+p195
+S'<Table t_artistas (id, f_artista_id, f_artista_n...rtista_premio, f_artista_imagen, f_artista_mini)>'
+p196
+sS'postcreation_fields'
+p197
+S'[]'
+p198
+sS'field_type'
+p199
+S"'upload'"
+p200
+sS'self'
+p201
+S'<pydal.adapters.sqlite.SQLiteAdapter object>'
+p202
+sS'tablename'
+p203
+S"'t_artistas'"
+p204
+sS'field'
+p205
+S'<pydal.objects.Field object>'
+p206
+sS'ftype'
+p207
+S"'CHAR(512)'"
+p208
+sS'polymodel'
+p209
+S'None'
+p210
+sS'tfile'
+p211
+S'<pydal.contrib.portalocker.LockedFile object>'
+p212
+sS'db'
+p213
+S'<DAL uri="sqlite://storage.sqlite">'
+p214
+sS'fake_migrate'
+p215
+S'False'
+p216
+sS'sql_fields'
+p217
+S"{'f_artista_descripcion': {'length': 32768, 'notnull': False, 'sortable': 8, 'sql': 'TEXT', 'type': 'text', 'unique': False}, 'f_artista_id': {'length': 512, 'notnull': False, 'sortable': 2, 'sql': 'CHAR(512)', 'type': 'string', 'unique': False}, 'f_artista_imagen': {'length': 512, 'notnull': False, 'sortable': 10, 'sql': 'CHAR(512)', 'type': 'upload', 'unique': False}, 'f_artista_materiales': {'length': 32768, 'notnull': False, 'sortable': 7, 'sql': 'TEXT', 'type': 'text', 'unique': False}, 'f_artista_mini': {'length': 512, 'notnull': False, 'sortable': 11, 'sql': 'CHAR(512)', 'type': 'upload', 'unique': False}, 'f_artista_nombre': {'length': 512, 'notnull': False, 'sortable': 3, 'sql': 'CHAR(512)', 'type': 'string', 'unique': False}, 'f_artista_pais': {'length': 512, 'notnull': False, 'sortable': 4, 'sql': 'CHAR(512)', 'type': 'string', 'unique': False}, 'f_artista_premio': {'length': 32768, 'notnull': False, 'sortable': 9, 'sql': 'TEXT', 'type': 'text', 'unique': False}, 'f_artista_tecnica': {'length': 32768, 'notnull': False, 'sortable': 6, 'sql': 'TEXT', 'type': 'text', 'unique': False}, 'f_artista_tematica': {'length': 32768, 'notnull': False, 'sortable': 5, 'sql': 'TEXT', 'type': 'text', 'unique': False}, ...}"
+p218
+sS'field_name'
+p219
+S"'f_artista_mini'"
+p220
+sS'types'
+p221
+S"{'big-id': 'INTEGER PRIMARY KEY AUTOINCREMENT', 'big-reference': 'INTEGER REFERENCES %(foreign_key)s ON DELETE %(on_delete_action)s %(null)s %(unique)s', 'bigint': 'INTEGER', 'blob': 'BLOB', 'boolean': 'CHAR(1)', 'date': 'DATE', 'datetime': 'TIMESTAMP', 'decimal': 'DOUBLE', 'double': 'DOUBLE', 'float': 'DOUBLE', ...}"
+p222
+sS'sortable'
+p223
+S'11'
+p224
+sS'sql_fields_aux'
+p225
+S"{'f_artista_descripcion': {'sql': 'TEXT'}, 'f_artista_id': {'sql': 'CHAR(512)'}, 'f_artista_imagen': {'sql': 'CHAR(512)'}, 'f_artista_materiales': {'sql': 'TEXT'}, 'f_artista_mini': {'sql': 'CHAR(512)'}, 'f_artista_nombre': {'sql': 'CHAR(512)'}, 'f_artista_pais': {'sql': 'CHAR(512)'}, 'f_artista_premio': {'sql': 'TEXT'}, 'f_artista_tecnica': {'sql': 'TEXT'}, 'f_artista_tematica': {'sql': 'TEXT'}, ...}"
+p226
+sS'TFK'
+p227
+g21
+sS'fields'
+p228
+S"'id INTEGER PRIMARY KEY AUTOINCREMENT,\\n    f_arti...ta_imagen CHAR(512),\\n    f_artista_mini CHAR(512)'"
+p229
+sS'other'
+p230
+S"';'"
+p231
+sssS'traceback'
+p232
+S'Traceback (most recent call last):\n  File "L:\\Descargas\\root lollipop\\web2py\\gluon\\restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "L:\\Descargas\\root lollipop\\web2py\\applications\\esQltoR\\models\\db_esqltor.py", line 81, in <module>\n    migrate=settings.migrate)\n  File "L:\\Descargas\\root lollipop\\web2py\\gluon\\packages\\dal\\pydal\\base.py", line 834, in define_table\n    table = self.lazy_define_table(tablename,*fields,**args)\n  File "L:\\Descargas\\root lollipop\\web2py\\gluon\\packages\\dal\\pydal\\base.py", line 873, in lazy_define_table\n    polymodel=polymodel)\n  File "L:\\Descargas\\root lollipop\\web2py\\gluon\\packages\\dal\\pydal\\adapters\\base.py", line 500, in create_table\n    sql_fields_old = pickle.load(tfile)\nUnpicklingError: invalid load key, \'<\'.\n'
+p233
+s.
