@@ -1,0 +1,150 @@
+{{extend 'layout_general.html'}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-md-offset-2" >
+                <h2><a>¿Qué es la Bienal?</a></h2>
+
+                <p align="justify">La Bienal es un concurso de esculturas organizado por la fundación Urunday, desde el año 1988 en la ciudad de Resistencia.</p>
+                <p >En cada edición, entre 10 y 15 escultores seleccionados deben realizar su obra al aire libre y a la vista de los visitantes.</p>
+                <p>Al finalizar la semana, el sábado por la noche, se lleva a cabo una ceremonia de clausura, con su correspondiente entrega de premios.</p>
+
+                <hr>
+
+                <h2><a>¿Y qué pasa con las Esculturas?</a></h2>
+                <p align="justify">Las mismas son expuestas por 60 días de finalizado el concurso y luego son distribuidas por la ciudad de Resistencia, creando un patrimonio cultural sin precedentes y transformando a la misma en un moderno y único museo al aire libre.</p>
+
+                <hr>
+                <h2>
+                    <a>Un poco de Historia</a>
+                </h2>
+                <p align="justify">
+                    Si bien el evento en sus principios era de carácter local y su material protagonista era la simbólica madera del Urunday, con el paso del tiempo su importancia fue creciendo, tanto como la lista de materiales que edición a edición se van agregando.
+                </p>
+                <p>
+                    Tradicionalmente, en sus primeros tiempos, el evento tenía lugar en la plaza 25 de Mayo, del centro de la ciudad, pero desde el 2006, con el inevitable crecimiento de sus visitantes, se trasladó al Paseo Costanero del Río Negro.
+                </p>
+                <hr>
+                <h2>
+                    <a>Ediciones Anteriores</a>
+                </h2>
+                <h3>
+                    <a>2012 La Profecía</a>
+                </h3>
+                <h4>Material:</h4>
+                    <ul>
+                        Mármol
+                    </ul>
+                <h4>Premios:</h4>
+                <ul>
+                    <li>
+                        <strong>1° Premio:</strong> Fernando Pinto (Colombia) "Espejos del cielo"
+                    </li>
+                    <li>
+                        <strong>2° Premio:</strong> Mário Lopes (Portugal) "Inside"
+                    </li>
+                    <li>
+                        <strong>3° Premio:</strong> Carlos Monge (México) "Sexto Sol"
+                    </li>
+                    <li>
+                        <strong>Premio "Femechaco":</strong> Néstor Vildoza (Argentina) "El último baktúm"
+                    </li>
+                    <li>
+                        <strong>Premio "O.S.D.E.":</strong> Alessio Ranaldi (Italia) "Forward"
+                    </li>
+                    <li>
+                        <strong>Premio de los Escultores "Efraín Boglietti":</strong> Baku Inoue (Japón) "El bosque – En Paz"
+                    </li>
+                    <li>
+                        <strong>Premio del Público "Juan A. Garcia Construcciones S.A.":</strong> Elias Naman (Siria) "Svela".
+                    </li>
+                    <li>
+                        <strong>Premio de los niños "Reinaldo Martínez":</strong> Baku Inoue (Japón) "El bosque – En Paz"
+                    </li>
+                </ul>
+                <h3>
+                    <a>2014 Homonovus</a>
+                </h3>
+                <h4>
+                 Material:
+                </h4>
+                    <ul>
+                        Acero inoxidable
+                    </ul>
+                <h4>
+                 Premios:
+                </h4>
+                <ul>
+                    <li>
+                        <strong>1° Premio "BANCO DE LA NACIÓN ARGENTINA":</strong> Thierry Ferreira (Francia) "Semillas Cubicas"
+                    </li>
+                    <li>
+                        <strong>2° Premio "NUEVO BANCO DEL CHACO":</strong> Hugo Maciel (Portugal) "Crecimiento en la vida"
+                    </li>
+                    <li>
+                        <strong>3° Premio "O.S.D.E.":</strong> Josef Baier (Austria) "Evolución (espiral logarítmico)"
+                    </li>
+                    <li>
+                        <strong>Premio "Femechaco":</strong> Ilker Yardimci (Turquía) "S-olo"
+                    </li>
+                    <li>
+                        <strong>Premio de los Escultores "Efraín Boglietti":</strong> Raul Oscar Gomez (Argentina) "Sueño y Promesa"
+                    </li>
+                    <li>
+                        <strong>Premio del Público "Juan A. Garcia Construcciones S.A.":</strong> Raul Oscar Gomez (Argentina) "Sueño y Promesa".
+                    </li>
+                    <li>
+                        <strong>Premio de los niños "Reinaldo Martínez":</strong> Raul Oscar Gomez (Argentina) "Sueño y Promesa"
+                    </li>
+                </ul>
+                <hr>
+                <h2>
+                    <a>Bienal 2016</a>
+                </h2>
+                <h3>
+                    Material
+                </h3>
+                <h4>
+                    Mármol
+                </h4>
+                <h3>
+                    Jurado
+                </h3>
+                <ul class="media-list">
+                <li class="media">
+                <div class="media-left">
+                    <img class="media-object" width="100px" alt="León Saavedra Geuer" src="{{=URL('static', 'images', args='Jurado1.jpg')}}">
+                </div>
+                <div class="media-body">
+                <h4>León Saavedra Geuer</h4>
+                <strong>¿Quién es?</strong><br>
+                    León Saavedra Geuer es de nacionalidad Boliviana, nacido en la ciudad de Culemborg en Holanda en 1958. Es la quinta generación de vitralistas, sus primeras aproximaciónes al arte fueron a través de su madre: María Sunniva Geuer, pintora y vitralista, quien le enseñó las técnicas del vitral y del gobelino.
+                </div>
+                </li>
+                <hr>
+                <li class="media">
+                <div class="media-left">
+                    <img class="media-object" width="100px" alt="Aquiles Jiménez" src="{{=URL('static', 'images', args='Jurado2.jpg')}}">
+                </div>
+                <div class="media-body">
+                <h4>Aquiles Jiménez</h4>
+                <strong>¿Quién es?</strong><br>
+                    Nació el 14 de mayo en Santo Domingo del Roble de Santa Bárbara de Heredia, Costa Rica. Cuando cursaba sus estudios de segunda enseñanza, conoció al escultor Olger Villegas. Quien lo inicio en la escultura.
+                </div>
+                </li>
+                <hr>
+                <li class="media">
+                <div class="media-left">
+                    <img class="media-object" width="100px" alt="Diego Santurio" src="{{=URL('static', 'images', args='Jurado3.jpg')}}">
+                </div>
+                <div class="media-body">
+                <h4>Diego Santurio</h4>
+                <strong>¿Quién es?</strong><br>
+                    Hijo de metalúrgico, siempre estuvo en contacto con el taller donde adquirió el lenguaje de diferentes materiales. Tuvo una adolescencia marcada por una tendencia al desarrollo artístico en varias actividades.
+                </div>
+                </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </div>

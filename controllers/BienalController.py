@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
 
-def show():
-    bien =""
+def queeslabienal():
     titulo="Bienal"
-    return dict(bien=bien, titulo=titulo)
+    return dict(titulo=titulo)
+
+def bienalesanteriores():
+    titulo="Bienal"
+    return dict(titulo=titulo)
+
+def bienal2016():
+    titulo="Bienal"
+    return dict(titulo=titulo)
