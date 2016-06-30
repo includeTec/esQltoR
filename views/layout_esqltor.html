@@ -53,25 +53,10 @@
       <div class="container-fluid">
         <div class="navbar-header">
       
-        <a class="navbar-brand">EsQltoR</a>
+        <a width="90px" class="navbar-brand">EsQltoR</a>
 
+        </div>
       
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          {{=response.logo or ''}}
-
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            {{='auth' in globals() and auth.navbar('Welcome',mode='dropdown') or ''}}
-          </ul>
-          {{if response.menu:}}
-          {{=MENU(response.menu, _class='nav navbar-nav',li_class='dropdown',ul_class='dropdown-menu')}}
-          {{pass}}
-        </div>
       </div>
     </nav>
     <!-- Masthead ===================================== -->    
