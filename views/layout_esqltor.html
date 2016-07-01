@@ -66,30 +66,39 @@
     <!-- Begin page content -->
 
    
-<!--================================================== MENU ================================================================================ -->
+<!--================================================== MENU ===================================================================-->
     <ul id="noStiches">
       <center>
       <br><br>
-      <li> <button>
+      <li> <button class="button1">
       <br>
       <image src='/esQltoR/static/images/qr.png' height='100' width= '100'>
       <br> Escanear QR </li>
       <br>
-          <li> <a href='/esQltoR/EscultorController/index.html'><button><span class= "glyphicon glyphicon-th-list"></span> Lista de Escultores</button></a></li>
+          <li> <a href='/esQltoR/EscultorController/index.html'><button class="button1"><span class= "glyphicon glyphicon-th-list"></span> Lista de Escultores</button></a></li>
       <br>
-          <li> <a href='/esQltoR/ArtistaController/index.html'><button><span class= "glyphicon glyphicon-user"></span> Artistas Paralelos</button></a></li>
+          <li> <a href='/esQltoR/ArtistaController/index.html'><button class="button1"><span class= "glyphicon glyphicon-user"></span> Artistas Paralelos</button></a></li>
       <br>
-          <li> <a href='/esQltoR/BienalController/show.html'><button><span class= "glyphicon glyphicon-info-sign"></span> Información Bienal</button></a></li>
-      <br>
-      <li> <button data-toggle="collapse" data-target="#demo"><span class = "glyphicon glyphicon-share"></span> Compartir</li>
+          <li><button class="button1" data-toggle="collapse" data-target="#bienal"><span class= "glyphicon glyphicon-info-sign"></span> Información Bienal</button></li>
 
-<!-- ============================================== COLLAPSE COMPARTIR ====================================================================== -->
-      <div id="demo" class="collapse">
-        <li><a href="https://www.facebook.com"> Feibu</li></a>
-        <li><a href="https://twitter.com"> Tuita</li></a>
-        <li><a href="https://plus.google.com/"> Gugle maz</li></a>
+<!--============================================== COLLAPSE BIENAL =========================================================-->
+      <div id="bienal" class="collapse">
+        <li><a href="/esQltoR/BienalController/queeslabienal.html"> ¿Qué es la Bienal?</a></li>
+        <li><a href="/esQltoR/BienalController/bienal2016.html"> Bienal 2016</a></li>
+        <li><a href="/esQltoR/BienalController/bienalesanteriores.html"> Bienales Anteriores</a></li>
+        
       </div>
+<!--============================================== END COLLAPSE BIENAL=========================================================-->
+      <br>
+        <li> <button class="button1" data-toggle="collapse" data-target="#share"><span class= "glyphicon glyphicon-share"></span> Compartir</li>
 
+<!--============================================== COLLAPSE COMPARTIR=========================================================-->
+      <div id="share" class="collapse">
+        <li><a href="https://www.facebook.com"> Feibu</a></li>
+        <li><a href="https://twitter.com"> Tuita</a></li>
+        <li><a href="https://plus.google.com/"> Gugle maz</a></li>
+      </div>
+<!--============================================== END COLLAPSE COMPARTIR =====================================================-->
       </center>
      </ul>
      

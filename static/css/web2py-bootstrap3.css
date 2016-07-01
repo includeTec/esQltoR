@@ -37,6 +37,8 @@ div.w2p_flash {
     box-shadow: none;
 }
 
+
+/*Boton estandar nuevo*/
 .button1 {
     -webkit-border-radius: 3;
     -moz-border-radius: 3;
@@ -44,28 +46,59 @@ div.w2p_flash {
     font-family: Arial;
     color: #000000;
     font-size: 14px;
-    background: #f0f0f0;
+    background: transparent;
     padding: 10px 20px 10px 20px;
     border: none;
-    text-decoration: none;} /*Boton estandar nuevo*/
+    text-decoration: none;
+    }
 
+.button1:focus {
+    background-color: transparent;
+    color: #000000;
+}
+ .button1:active {
+    outline: none;
+    border: none;
+ }
+
+
+/*Back Button and Menu*/
 .button2 {
     padding: 10px 0px 0px 0px;
     background-color: transparent;
     border-radius: 3px;
     border: none;
-    } /*Back Button*/
+    }
 
 .button2:hover {
-    background-color:  transparent;
+    background-color: transparent;
     color:  #660066;
     text-decoration: none;
 }
 
 .button2:focus{
-    background-color:  transparent;
+    background-color: transparent;
     color:  #660066;
     text-decoration: none;
+}
+
+/* Botón Ver Escultura*/
+.button3 {
+    -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    border-radius: 3px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    background-color:rgba(112,2,115,0.83);
+    padding: 10px 20px 10px 20px;
+    border: none;
+    text-decoration: none;
+}
+
+.button3:hover {
+    background-color: #660066;
+    color:#ffffff;
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
