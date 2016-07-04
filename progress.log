@@ -491,3 +491,19 @@
 [2016-06-29 10:27:07] EDIT esQltoR/models/db_esqltor.py: -12
 [2016-06-29 10:33:06] EDIT esQltoR/views/layout_esqltor.html: -6
 >>>>>>> dae539d89a74e3b90f239f9d66ef3eb15a516e2c
+[2016-07-04 09:39:12] CREATE AcercaDe.py: 0
+[2016-07-04 09:41:05] CREATE EscanearQR.py: 0
+[2016-07-04 09:41:54] CREATE EscanearQR/index.html: 0
+[2016-07-04 09:42:53] CREATE AcercaDe/index.html: 0
+[2016-07-04 09:43:43] CREATE AcercaDe/aplicaciones.html: 0
+[2016-07-04 09:44:24] EDIT esQltoR/views/AcercaDe/aplicaciones.html: -1
+[2016-07-04 09:44:56] EDIT esQltoR/views/AcercaDe/index.html: -1
+[2016-07-04 09:45:19] EDIT esQltoR/views/EscanearQR/index.html: -1
+[2016-07-04 09:46:22] EDIT esQltoR/controllers/AcercaDe.py: 3
+[2016-07-04 09:47:17] EDIT esQltoR/controllers/EscanearQR.py: 1
+[2016-07-04 09:47:21] EDIT esQltoR/controllers/AcercaDe.py: 0
+[2016-07-04 09:47:23] EDIT esQltoR/views/EscanearQR/index.html: 0
+[2016-07-04 09:47:25] EDIT esQltoR/views/AcercaDe/index.html: 0
+[2016-07-04 09:47:28] EDIT esQltoR/views/AcercaDe/aplicaciones.html: 0
+[2016-07-04 09:50:41] EDIT esQltoR/controllers/AcercaDe.py: 2
+[2016-07-04 09:51:12] EDIT esQltoR/controllers/EscanearQR.py: 1
