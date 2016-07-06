@@ -1,10 +1,13 @@
 {{extend 'layout_general.html'}}
+<head>
 <h1>{{=escultor.f_escultor_nombre}}</h1>
 <hr>
 <center>
 <img class="img-thumbnail" width="670px" src="{{=URL('download', args=escultor.f_escultor_imagen)}}" />
 </center>
 <hr>
+</head>
+<body>
 <h2>Biografía</h2>
     <h4>{{=escultor.f_escultor_descripcion}}</h4>
 <hr>
@@ -23,17 +26,25 @@
 <br>
 <br>  
 <hr>
+</body>
 <footer><strong>Contacto: </strong><a href="{{=escultor.f_escultor_contacto}}">{{=escultor.f_escultor_contacto}}</a>
 <!--=============================== BOTON COMPARTIR =======================================================================-->
-
+ <center>
 <br>
-        <button class="button1" data-toggle="collapse" data-target="#share"><span class= "glyphicon glyphicon-share"></span> Compartir
-      <div id="share" class="collapse" class = "container-fluid">
-        <li><a href="https://www.facebook.com"> Feibu</a></li>
-        <li><a href="https://twitter.com"> Tuita</a></li>
-        <li><a href="https://plus.google.com/"> Gugul maz</a></li>
+        <button class="button1" data-toggle="collapse" data-target="#share"><span class= "glyphicon glyphicon-share"></span> Compartir</button>
+      <div id="share" class="collapse" class="container-fluid">
+ 
+        <a href="https://www.facebook.com"><img src= "\esQltoR\static\images\facebook.png">&nbsp;&nbsp;</a>
+        <a href="https://twitter.com"><img src= "\esQltoR\static\images\twitter.png">&nbsp;&nbsp;</a>
+        <a href="https://plus.google.com/"><img src= "\esQltoR\static\images\gplus-32.png"></a>
       </div>
+</center>
+     
 
 <!--=============================== END BOTON COMPARTIR =======================================================================-->
 </footer>
 <hr>
+    <!-- The javascript =============================== -->
+    <script src="{{=URL('static','js/bootstrap.min.js')}}"></script>
+    <script src="{{=URL('static','js/web2py-bootstrap3.js')}}"></script>
+    
