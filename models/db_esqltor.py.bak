@@ -19,6 +19,8 @@ db.define_table('t_escultores',
           label=T('Escultor Imagen')),
     Field('f_escultor_mini', type='upload',
           label=T('Escultor miniatura')),
+    Field('f_escultor_audio', type='upload',
+          label=T('Escultor Audio')),
     
     format='%(f_escultor_id)s',
     migrate=settings.migrate)

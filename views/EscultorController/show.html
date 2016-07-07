@@ -9,7 +9,7 @@
 </head>
 <body>
 <h2>Biografía</h2>
-    <h4>{{=escultor.f_escultor_descripcion}}</h4>
+    <p align="justify">{{=escultor.f_escultor_descripcion}}</p>
 <hr>
 <h2>Premios</h2>
 
@@ -18,25 +18,28 @@
     {{=LI(STRONG(premio.f_premios_anio, ": "), premio.f_premios_descripcion)}}
 {{pass}}
 </ul>
-<hr>
-<center>
-<a href="{{=URL('escultura', args=escultor.id)}}"><button class="button3">Ver Escultura 2016  </button></a></center>
-<br>  
-<br>  
 <br>
+<strong>Contacto: </strong><a href="{{=escultor.f_escultor_contacto}}">{{=escultor.f_escultor_contacto}}</a>
+<hr>
+    <center>
+<a href="{{=URL('escultura', args=escultor.id)}}"><button class="button3">Ver Escultura 2016  </button></a></center>
 <br>  
 <hr>
 </body>
-<footer><strong>Contacto: </strong><a href="{{=escultor.f_escultor_contacto}}">{{=escultor.f_escultor_contacto}}</a>
+<footer>
 <!--=============================== BOTON COMPARTIR =======================================================================-->
  <center>
 <br>
         <button class="button1" data-toggle="collapse" data-target="#share"><span class= "glyphicon glyphicon-share"></span> Compartir</button>
       <div id="share" class="collapse" class="container-fluid">
  
-        <a href="https://www.facebook.com"><img src= "\esQltoR\static\images\facebook.png">&nbsp;&nbsp;</a>
-        <a href="https://twitter.com"><img src= "\esQltoR\static\images\twitter.png">&nbsp;&nbsp;</a>
-        <a href="https://plus.google.com/"><img src= "\esQltoR\static\images\gplus-32.png"></a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://industria.chaco.gov.ar/enlaces/informatorio" class="facebook" target="_blank">
+            <img src= "/esQltoR/static/images/facebook.png">&nbsp;&nbsp;
+        </a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="info2016">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <a href="https://plus.google.com/">
+            <img src= "/esQltoR/static/images/gplus-32.png">
+        </a>
       </div>
 </center>
      
@@ -44,7 +47,3 @@
 <!--=============================== END BOTON COMPARTIR =======================================================================-->
 </footer>
 <hr>
-    <!-- The javascript =============================== -->
-    <script src="{{=URL('static','js/bootstrap.min.js')}}"></script>
-    <script src="{{=URL('static','js/web2py-bootstrap3.js')}}"></script>
-    

@@ -19,7 +19,7 @@
 <li class="media">
 <div class="media-left">
   <a href="{{=URL('EscultorController', 'show', args=escultor.id)}}">
-    <img class="media-object" width="100px" src="{{=URL('download', args=escultor.f_escultor_mini)}}" />
+    <img class="media-object" width="75px" src="{{=URL('download', args=escultor.f_escultor_mini)}}" />
   </a>
 </div>
 <div class="media-body">
