@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 def index():
-    titulo = "About"
+    titulo = "Acerca"
     return dict(titulo=titulo)
 
 def aplicaciones():
-    titulo = "EsQltoR"
+    titulo = "Apps"
     return dict(titulo=titulo)

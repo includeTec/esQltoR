@@ -1,13 +1,20 @@
 {{extend 'layout_general.html'}}
-<head>
+
 <h1>{{=escultor.f_escultor_nombre}}</h1>
 <hr>
 <center>
 <img class="img-thumbnail" width="670px" src="{{=URL('download', args=escultor.f_escultor_imagen)}}" />
+
+<audio id="demo" src="{{=URL('download', args=escultor.f_escultor_audio)}}"></audio>
+<div>
+  <button onclick="document.getElementById('demo').play()"><span class="glyphicon glyphicon-play"></span></button>
+  <button onclick="document.getElementById('demo').pause()"><span class="glyphicon glyphicon-pause"></span></button>
+  <button onclick="document.getElementById('demo').volume-=0.1"><span class="glyphicon glyphicon-volume-down"></span></button>
+  <button onclick="document.getElementById('demo').volume+=0.1"><span class="glyphicon glyphicon-volume-up"></span></button>
+</div>
 </center>
+
 <hr>
-</head>
-<body>
 <h2>Biografía</h2>
     <p align="justify">{{=escultor.f_escultor_descripcion}}</p>
 <hr>
@@ -24,7 +31,7 @@
     <center>
 <a href="{{=URL('escultura', args=escultor.id)}}"><button class="button3">Ver Escultura 2016  </button></a></center> 
 <hr>
-</body>
+
 <footer>
 <!--=============================== BOTON COMPARTIR =======================================================================-->
  <center>
