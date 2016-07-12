@@ -152,6 +152,13 @@ nav.navbar ul.nav li {
 }
 /*-------------------------------------------END NAVBAR--------------------------------------------------------------------------------------*/
 
+
+.img-thumbnail
+{
+background-color: transparent;
+border: 0px solid;
+}
+
 div.error {
     width: auto;
     background: transparent;
