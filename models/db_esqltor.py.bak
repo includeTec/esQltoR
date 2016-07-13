@@ -49,6 +49,8 @@ db.define_table('t_esculturas',
           label=T('Escultura Descripcion')),
     Field('f_escultura_imagen', type='upload',
           label=T('Escultura Imagen')),
+  Field('f_escultura_audio', type='upload',
+          label=T('Escultura Audio')),
     format='%(f_escultura_id)s',
     migrate=settings.migrate)
 

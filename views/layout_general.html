@@ -52,15 +52,12 @@
       <div class="container-fluid">
         <div class="navbar-header">
             
-                <a class="navbar-brand">{{=titulo or 'EsQltoR'}}</a>
-            
-
           <script>
-            function goBack()
-              {
-             window.history.back();
-              }
-            </script>
+          function goBack()
+            {
+           window.history.back();
+            }
+          </script>
 
           <button class="button button2" onclick="goBack()"><img width="35px" src="/esQltoR/static/images/theflecha.svg"> </button>
           
@@ -70,12 +67,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button></a> 
+
+          <div class="navbar-brand">{{=titulo or 'EsQltoR'}}</div>
+
           {{=response.logo or ''}}
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
 
-            <a href="/esQltoR/default/index"><button class="button button2"><img width="35px" src="/esQltoR/static/images/elMenuscito.svg"></button></a>         
+            <a href="/esQltoR/default/index"><button class="button button2"><img width="35px" style="margin-rigth: 15px" src="/esQltoR/static/images/home-icon.svg"></button></a>         
 
           </ul>
         </div>
