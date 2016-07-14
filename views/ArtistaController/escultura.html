@@ -4,10 +4,14 @@
      <div class="row">
          <div class="col-sm-12 col-md-8 col-md-offset-2" >
 <center>
+
 <h1>{{=escultura.f_escultura_nombre}}</h1>
 <h3>{{=escultura.f_escultura_id}}</h3>
+
+{{if escultura.f_escultura_nombre!="La alquimia":}}
 <hr>
 <img class="img-thumbnail" width="500px" src="{{=URL('download', args=escultura.f_escultura_imagen)}}" />
+{{pass}}
  </center>
 
 <hr>
