@@ -154,6 +154,26 @@ nav.navbar ul.nav li {
     margin-right: 10%; 
     font-size: 35px;
 }
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 2px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.menu-section {
+  &.on {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  }
+}
 /*-------------------------------------------END NAVBAR--------------------------------------------------------------------------------------*/
 
 
