@@ -46,6 +46,7 @@
 'Are you sure you want to delete this object?': '¿Está seguro que desea borrar este objeto?',
 'Are you sure you want to uninstall application "%s"': '¿Está seguro que desea desinstalar la aplicación "%s"',
 'Are you sure you want to uninstall application "%s"?': '¿Está seguro que desea desinstalar la aplicación "%s"?',
+'Artista Audio': 'Artista Audio',
 'Artista Contacto': 'Artista Contacto',
 'Artista Descripcion': 'Artista Descripcion',
 'Artista Id': 'Artista Id',
