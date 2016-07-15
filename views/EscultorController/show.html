@@ -43,29 +43,26 @@
 <a href="{{=URL('escultura', args=escultor.id)}}"><button class="button3">Ver Escultura 2016  </button></a></center> 
 <hr>
 
-<footer>
 <!--=============================== BOTON COMPARTIR =======================================================================-->
  <center>
-        <button class="button1" data-toggle="collapse" data-target="#share"><span class= "glyphicon glyphicon-share"></span> Compartir</button>
-        <div id="share" class="collapse" class="container-fluid">
- 
-          <a href="https://www.facebook.com/sharer/sharer.php?u=http://industria.chaco.gov.ar/enlaces/informatorio" class="facebook" target="_blank">
-              <img src= "/esQltoR/static/images/facebook.png">&nbsp;&nbsp;
-          </a>
+        <h4><span class= "glyphicon glyphicon-share"></span> Compartir</h4>
 
-          <a href="https://twitter.com/intent/tweet?url=http://industria.chaco.gov.ar/enlaces/informatorio; ?>&text=Estoy usando esQltoR en el ; ?>%20por%20@ayudawp" class="twitter" target="_blank">
-              <img src= "/esQltoR/static/images/twitter.png">&nbsp;&nbsp;
-          </a>
-          <a href="https://plus.google.com/share?url=http://industria.chaco.gov.ar/enlaces/informatorio">
-              <img src= "/esQltoR/static/images/gplus-32.png">
-          </a>
+      <div class="container-fluid">
+ 
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://esqltor.ddns.net/EscultorController/show/{{=escultor.id}}" class="facebook" target="_blank">
+            <img src= "/esQltoR/static/images/facebook.png">&nbsp;&nbsp;
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=Estoy+conociendo+a+{{=escultor.f_escultor_nombre}}+desde+la+app+de+esQltoR&url=http://esqltor.ddns.net/EscultorController/show/{{=escultor.id}}&hashtags=esQltoR" class="twitter" target="_blank">
+        <img src= "/esQltoR/static/images/twitter.png">&nbsp;&nbsp;
+        </a>
+
+        <a href="https://plus.google.com/share?url=http://esqltor.ddns.net/EscultorController/show/{{=escultor.id}}">
+            <img src= "/esQltoR/static/images/gplus-32.png">
+        </a>
       </div>
 </center>
-     
-
 <!--=============================== END BOTON COMPARTIR =======================================================================-->
-</footer>
-<hr>
 </div>
 </div>
 </div>

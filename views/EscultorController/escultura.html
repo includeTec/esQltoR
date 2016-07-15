@@ -27,8 +27,8 @@
 
 
 <p align="justify">{{=escultura.f_escultura_descripcion}}</p>
-
 <hr>
+
 <ul class="media-list">
 <li class="media">
 <div class="media-left">
@@ -43,6 +43,28 @@
 </div>
 </li>
 </ul>
+
+<hr>
+<!--=============================== BOTON COMPARTIR =======================================================================-->
+ <center>
+        <h4><span class= "glyphicon glyphicon-share"></span> Compartir</h4>
+
+      <div class="container-fluid">
+ 
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://esqltor.ddns.net/EscultorController/escultura/{{=escultor.id}}" class="facebook" target="_blank">
+            <img src= "/esQltoR/static/images/facebook.png">&nbsp;&nbsp;
+        </a>
+
+        <a href="https://twitter.com/intent/tweet?text=Estoy+conociendo+la+obra+de+{{=escultor.f_escultor_nombre}}+desde+la+app+de+esQltoR&url=http://esqltor.ddns.net/EscultorController/escultura/{{=escultor.id}}&hashtags=esQltoR" class="twitter" target="_blank">
+        <img src= "/esQltoR/static/images/twitter.png">&nbsp;&nbsp;
+        </a>
+
+        <a href="https://plus.google.com/share?url=http://esqltor.ddns.net/EscultorController/escultura/{{=escultor.id}}">
+            <img src= "/esQltoR/static/images/gplus-32.png">
+        </a>
+      </div>
+</center>
+<!--=============================== END BOTON COMPARTIR =======================================================================-->
 
          </div>
     </div>
